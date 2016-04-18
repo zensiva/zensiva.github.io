@@ -1,0 +1,239 @@
+body {
+    padding-top: 50px;
+    font-family: Dosis, Arial;
+}
+
+.color-white {
+    color: white;
+}
+
+h2 {
+  font-family: "Roboto Slab", cursive;
+}
+
+
+/* main-section */
+.main-section {
+  margin-top: 3em;
+    margin-left: 30vw;
+    width: 40vw;
+    height: 40vw;
+}
+.main-circle {
+    margin-left:10%;
+    width: 80%;
+    height: 80%;
+}
+.main-desc {
+    width: 100%;
+    height: 100%;
+}
+.main-circle img{
+    width: 100%;
+}
+
+
+@keyframes rotateFull {
+  from { transform: rotate(0);}
+  to {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes rotateFull {
+  from { transform: rotate(0);}
+  to {transform: rotate(360degs);}
+}
+
+.main-circle{
+  animation: rotateFull 2s linear infinite;
+  -webkit-animation: rotateFull 2s linear infinite;
+
+}
+/* about  */
+
+#about-frame {
+    background: url("../img/site/pattern-home.png");
+    background-color: #204d74;
+    padding: 4em 0;
+}
+
+#about-frame .sec-header{
+    padding: 0 3em 2em 3em;
+}
+
+.sec-header .caption {
+    color: #aaa;
+}
+
+.about-box {
+    background: white;
+    width: 94%;
+    padding: 1.5em 3%;
+    margin: 1em 1%;
+    border-radius: 1em;
+    position: relative;
+    text-align: center;
+}
+.about-box .caption {
+    margin-bottom: 2em;
+}
+.about-box ul{
+  text-align: left;
+}
+
+.about-box::before {
+    content: "";
+    position: absolute;
+    top: 0em;
+    margin-left: 0;
+    margin-right: 0;
+    border-top: solid 1em #204d74;
+    border-left: solid 1em transparent;
+    border-right: solid 1em transparent;
+}
+
+/* Services */
+
+#services-frame{
+    background: #000000;
+}
+
+.service {
+    min-height: 40em;
+    padding: 0;
+    /*background: url(../img/wall2.jpg);*/
+    background-color: #f60;
+    background-size: cover;
+    -webkit-transition: width 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    -moz-transition: width 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    -ms-transition: width 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    -o-transition: width 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    transition: width 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+.service:nth-of-type(1){
+  background: #000 url(../img/offerings/tmp-image-01-s.jpg);
+  background-size: cover;
+}
+.service:nth-of-type(2){
+  background: #000 url(../img/offerings/tmp-image-02-s.jpg);
+  background-size: cover;
+}
+.service:nth-of-type(3){
+  background: #000 url(../img/offerings/tmp-image-03-s.jpg);
+  background-size: cover;
+}
+.service:nth-of-type(4){
+  background: #000 url(../img/offerings/tmp-image-04-s.jpg);
+  background-size: cover;
+}
+
+.service.hovered{
+    width: 31%;
+}
+.service.unhovered{
+    width: 23%;
+}
+.service.unhovered::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: #000000;
+    opacity: 0.7;
+}
+
+.service.opened {
+    width: 100%;
+}
+.service.closed {
+    width: 0;
+}
+
+.service-header {
+    margin-top: 15em;
+    text-align: center;
+}
+.service-header .anim-border {
+    width: 10%;
+    margin-left: 45%;
+    margin-top: 2em;
+    height: 1px;
+    background: white;
+}
+.service:hover .anim-border{
+    margin-left:30%;
+    width: 40%;
+    height: 2px;
+    transition: all 1s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+.service-details {
+    width: 100%;
+    height: 100%;
+    min-height: 40em;
+    background: #aaa;
+    padding: 3em 1em;
+}
+
+
+.stream {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.line-dash {
+    border: 1px dashed white;
+    padding-top: 2em;
+    border-bottom: 0;
+}
+
+.dash-line-vertical {
+    margin-left: 50%;
+    height: 2em;
+    border-left: 1px dashed white;
+}
+
+.border-top {
+    border-top: 1px dashed white;
+}
+
+
+.rounded-stream {
+    width: 12em ; height: 12em; line-height: 12em;
+    text-align: center;
+    border-radius: 20em;
+    margin:auto;
+    background: #000000;
+}
+.rounded-stream p {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: normal;
+}
+.service-details {
+    display: none;
+}
+
+
+/* Service: Services(Implemenations) */
+
+.service .sec-header {
+    padding: 1em 0 2em 0;
+}
+
+.implementation {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.implementation .img-desc {
+    font-weight: bold;
+    padding:4px 0;
+    font-size: 1.1em;
+}
+
+/* FOOTER */
+footer {
+  padding: 1em;
+  background: linear-gradient(to bottom,#3c3c3c 0,#222 100%);
+  color: white;
+}
