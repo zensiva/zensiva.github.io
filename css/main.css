@@ -11,6 +11,13 @@ h2 {
   font-family: "Roboto Slab", cursive;
 }
 
+h3 {
+    font-weight: bold;
+}
+
+p.caption {
+    font-size: 17px;
+}
 
 /* main-section */
 .main-section {
@@ -66,15 +73,16 @@ h2 {
 
 .about-box {
     background: white;
-    width: 94%;
-    padding: 1.5em 3%;
-    margin: 1em 1%;
+    width: 90%;
+    padding: 1.5em 5%;
+    margin: 1em 5%;
     border-radius: 1em;
     position: relative;
     text-align: center;
 }
 .about-box .caption {
     margin-bottom: 2em;
+    font-size: 15px;
 }
 .about-box ul{
   text-align: left;
@@ -198,18 +206,34 @@ h2 {
 
 
 .rounded-stream {
-    width: 12em ; height: 12em; line-height: 12em;
+    font-size: 1.3em;
+    width: 13em ; height: 13em; line-height: 13em;
     text-align: center;
     border-radius: 20em;
     margin:auto;
     background: #000000;
+    color: white;
+    font-weight: bold;
+
 }
-.rounded-stream p {
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    line-height: normal;
+
+
+.stream-egs div{
+    width: 19em;
+    margin: auto;
+    background: #000000;
+    color: #aaa;
+    margin-top: 5px;
 }
+.stream-egs div h4{
+    padding: 3px;
+    margin:1px;
+}
+
+.stream-egs div p{
+    display: none;
+}
+
 .service-details {
     display: none;
 }
