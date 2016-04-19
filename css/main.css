@@ -363,6 +363,42 @@ nav{
 .platform p{
     text-align: center;
 }
+/* Contact */
+
+#contact-frame {
+    background: #204d74 url("../img/contact.png");
+    background-size: contain;
+    background-position-x: 100%;
+    background-repeat: no-repeat;
+    color: #AAA;
+    padding: 5em 2em;
+}
+#contact-frame h2 {
+    padding: 1em;
+}
+#contact-frame ul {
+    margin: 0;
+    padding: 1em;
+}
+#contact-frame ul li{
+    list-style: none;
+    font-size: 20px;
+}
+#contact-frame a {
+    color: inherit;
+}
+.socials li {
+    display: inline-block;
+}
+.socials a img{
+    width: 70px;
+    padding: 10px;
+}
+.socials a img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-out;
+}
+
 /* FOOTER */
 footer {
   padding: 1em;
