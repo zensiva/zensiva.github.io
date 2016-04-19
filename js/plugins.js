@@ -68,7 +68,7 @@ $(function() {
         var $anchor = $(this);
         //alert($($anchor.attr("href")).offset().top);
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top-10
+            scrollTop: $($anchor.attr('href')).offset().top-60
         }, 1500, 'easeOutSine');
         event.preventDefault();
     });
