@@ -22,7 +22,36 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div itemscope="" itemtype="http://schema.org/Organization">
+                        <a itemprop="url" class="navbar-brand page-scroll" href="#top-header">
+                            <img itemprop="logo" id="mainlogo" src="img/logo.png" alt="ZenSiva Logo">
+                            <h1>ZenSiva</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll" href="#main-frame">WHO WE ARE</a></li>
+                        <li><a class="page-scroll" href="#about-frame">WHAT FOR</a></li>
+                        <li><a class="page-scroll" href="#services-frame">OFFERINGS</a></li>
+                        <li><a class="page-scroll" href="#contact-frame">CONTACT</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    <nav class="navbar navbar-inverse navbar-fixed-top hidden" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -35,8 +64,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#about">Right</a></li>
-                <li><a href="#contact">Right</a></li>
+                <li><a class="page-scroll" href="#main-frame">WHO WE ARE</a></li>
+                <li><a class="page-scroll" href="#about-frame">WHAT FOR</a></li>
+                <li><a class="page-scroll" href="#services-frame">OFFERINGS</a></li>
+                <li><a class="page-scroll" href="#contact-frame">CONTACT</a></li>
             </ul>
         </div><!--/.navbar-collapse -->
       </div>
@@ -270,6 +301,50 @@
         </div>
     </section>
     <div class="clearfix"></div>
+    <section id="contact-frame">
+        <div class="row">
+            <div class="col-md-12 sec-header text-center hidden">
+                <h2 class="color-white">WHAT FOR?</h2>
+                <p class="caption">We provide our quality services to leading brands and marketing partners.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <div class="col-md-8">
+                    <h2 class="text-left">Give us a shout,<br>we'll make you a believer.</h2>
+                    <div class="col-md-6">
+                        <ul class="lists">
+
+                            <li>New Business</li>
+
+                            <li>Reach out to Matt FaJohn</li>
+
+                            <li>(720) 907-3833</li>
+
+                            <li><a href="mailto:hotleads@legworkstudio.com" target="_new">hotleads@legworkstudio.com</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="lists">
+                            <li>General Inquiries</li>
+                            <li>77 West 9th Ave</li>
+                            <li>Denver, CO 80204</li>
+                            <li><a href="mailto:hello@legworkstudio.com" target="_new">hello@legworkstudio.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <ul class="socials">
+                            <li><a id="social-twitter" href="https://twitter.com/legwork" target="_new"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svg/svgdefs.svg#icon-twitter"></use></svg></a></li>
+                            <li><a id="social-facebook" href="https://facebook.com/legwork" target="_new"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svg/svgdefs.svg#icon-facebook"></use></svg></a></li>
+                            <li><a id="social-vimeo" href="https://vimeo.com/legworkstudio" target="_new"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svg/svgdefs.svg#icon-vimeo"></use></svg></a></li>
+                            <li><a id="social-github" href="https://github.com/legworkstudio" target="_new"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svg/svgdefs.svg#icon-github"></use></svg></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer>
       <p class="text-center">&copy; Zensiva 2016</p>
     </footer>
@@ -277,44 +352,8 @@
         <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-        <script>
-            $(document).ready(function(){
-
-                $(".service").click(function(){
-                    console.log('clicked');
-                    $('.service').removeClass('hovered').removeClass('unhovered').not(this).addClass('closed');
-                    $(this).addClass('opened');
-                    $(this).find('.service-details').show();
-                    $(this).find('.service-header').hide();
-                });
-                $(".service .back-arrow").click(function(e){
-                    $(".service").removeClass('opened').removeClass('closed');
-                    $(".service-details").hide();
-                    $(".service-header").show();
-                    e.stopPropagation();
-                });
-//                $(".service").on({
-//                    mouseenter: function(){
-//                        console.log('hoverrr');
-//                        $(".service").not(this).addClass('unhovered');
-//                        $(this).addClass('hovered');
-//                    },
-//                    mouseleave: function(){
-//                        $(".service").removeClass('hovered').removeClass('unhovered');
-//                    }
-//                });
-                //$("footer").hover(function(){ console.log('hover')},function(){ console.log('uhover')}).click(function(){ console.log('click')});
-            });
-        </script>
     </body>
 </html>

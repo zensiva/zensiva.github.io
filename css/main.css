@@ -18,6 +18,34 @@ h3 {
 p.caption {
     font-size: 17px;
 }
+/* NAV */
+nav{
+    background: transparent;
+}
+.navbar-shrink{
+    background: #333;
+}
+#mainlogo{
+    height: 50px; width: 50px;
+    line-height: 50px;
+    vertical-align: top;
+}
+.navbar-brand {
+    padding: 5px;
+    height: 60px;
+}
+.navbar-brand img{
+    display: inline-block;
+}
+.navbar-brand h1{
+    display: inline-block;
+    font-size: 36px;
+    padding: 0px;
+    margin: 0;
+    vertical-align: middle;
+    line-height: 50px;
+    margin-left: 5px;
+}
 
 /* main-section */
 .main-section {
