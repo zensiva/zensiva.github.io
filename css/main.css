@@ -405,3 +405,26 @@ footer {
   background: linear-gradient(to bottom,#3c3c3c 0,#222 100%);
   color: white;
 }
+
+
+/* WHAT FOR  */
+#for-details{
+    padding: 3em;
+}
+.whatfor{
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 1em;
+}
+.whatfor h4{
+    font-weight: bold;
+    background: #204d74;
+    border-radius: 10px;
+    color: white;
+    padding: 3px;
+}
+
+.whatfor p {
+    text-align: justify;
+}
