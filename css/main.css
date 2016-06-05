@@ -293,6 +293,7 @@ nav{
     -o-transition: width 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
     transition: width 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
     overflow-x: hidden;
+    border: 1px solid #0E97F0;
 }
 .service-header h2{
   font-size: 25px;
@@ -310,6 +311,10 @@ nav{
     width: 40%;
     height: 2px;
     transition: all 1s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+.service:hover .service-header > img {
+  transform: scale(1.1) translateY(-20px);
+  transition: transform 0.5s ease-in;
 }
 
 .service-details {
@@ -365,7 +370,7 @@ nav{
 }
 @media (max-width: 768px) {
     .service {
-        height: 25vh;
+        height: 20vh;
         overflow: hidden;
     }
 
@@ -381,7 +386,7 @@ nav{
         vertical-align: middle;
     }
     .service-header h2 {
-        line-height: 20vh;
+        line-height: 16vh;
     }
     .service-header > img{
       display: none;
@@ -485,12 +490,16 @@ nav{
 
 /* GROWTH LABS */
 .growth-labs .growth {
-    padding: 1em;
+    padding: 1em 0;
+}
+.growth-labs .growth img{
+  width: 5em;
 }
 .growth-labs .img-desc {
     display: inline-block;
     font-size: 20px;
     padding: 20px 0 20px 20px;
+    margin-right: -2em;
 }
 
 /* PLATFORM */
