@@ -16,7 +16,8 @@
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <link href="http://fonts.googleapis.com/css?family=Dosis:400,500,700,800" rel="stylesheet" type="text/css">
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <!-- <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'> -->
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -53,17 +54,25 @@
         </nav>
     <section id="main-frame">
          <div class="main-section">
-             <div class="main-circle">
-                 <img src="img/site/circle2.png" alt="main"/>
+             <div class="inner-container">
+               <div class="intro-message">
+                 <div class="main-message">
+                  Achieving solid growth through <br>marketing automation
+                 </div>
+                 <div class="message-desc">
+                   We are industry experts for ARM (acquisition, retention and monetisation) model and have helped companies in generating additional revenue.
+                   <br>#offshoring #digital  #cloud
+                 </div>
+               </div>
+               <div class="intro-circle"></div>
              </div>
-             <div class="main-desc"></div>
          </div>
     </section>
     <section id="about-frame">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 sec-header text-center">
-                    <h2 class="color-white">WHAT FOR?</h2>
+                    <h2>WHAT FOR?</h2>
                     <p class="caption">We provide our quality services to leading brands and marketing partners.</p>
                 </div>
             </div>
@@ -86,12 +95,13 @@
         </div>
     </section>
     <section id="services-frame">
-        <div class="service col-sm-3">
+        <div class="service col-sm-3" id="services-offerings">
             <div class="service-header">
-                <h2 class="color-white">OFFERINGS</h2>
+                <img src="img/main/brainstroming.svg" alt="offerings">
+                <h2>OFFERINGS</h2>
                 <div class="anim-border"></div>
             </div>
-            <div class="service-details" style="background: #A00;">
+            <div class="service-details">
                 <div class="row">
                     <div class="col-md-12 sec-header text-center">
                         <a class="back-arrow"></a>
@@ -157,7 +167,8 @@
         </div>
         <div class="service col-sm-3">
             <div class="service-header">
-                <h2 class="color-white">SERVICES</h2>
+                <img src="img/main/favourite-topic.svg" alt="Services" />
+                <h2>SERVICES</h2>
                 <div class="anim-border"></div>
             </div>
             <div class="service-details" style="background: white;">
@@ -165,35 +176,35 @@
                     <div class="sec-header col-md-12 sec-header text-center">
                         <a class="back-arrow"></a>
                         <h2>SERVICES</h2>
-                        <p class="caption">ZenSiva team follows thorough project management steps to deliver these services. ZS’s Architects, BAs, QA and UI teams step in at various project steps as required</p>
+                        <p class="caption dark">ZenSiva team follows thorough project management steps to deliver these services. ZS’s Architects, BAs, QA and UI teams step in at various project steps as required</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-offset-1 col-md-10">
                         <div class="implementation col-md-4 text-center">
-                            <img src="img/services/1.png" />
+                            <img src="img/services/cloud.svg" />
                             <div class="img-desc">SFMC Implementation</div>
                             <p>Get the full stack Salesforce Marketing Cloud implementation done</p>
                         </div>
                         <div class="implementation col-md-4 text-center">
-                            <img src="img/services/2.png" />
+                            <img src="img/services/cloud-network.svg" />
                             <div class="img-desc">Pardot Implementation</div>
                             <p>We complete any level of Pardot implementation within 4 weeks timeline</p>
                         </div>
                         <div class="implementation col-md-4 text-center">
-                            <img src="img/services/3.png" />
+                            <img src="img/services/desk-lamp.svg" />
                             <div class="img-desc">Marketo Implementation</div>
                             <p>Get Marketo Implementation with marketing expertise leveraged in all areas</p>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <div class="implementation col-md-offset-3 col-md-3 text-center">
-                            <img src="img/services/4.png" />
+                            <img src="img/services/space-rocket.svg" />
                             <div class="img-desc">Digital Marketing Consulting</div>
                             <p>Get the best of execution around intersecting world of technology and marketing</p>
                         </div>
                         <div class="implementation col-md-3 text-center">
-                            <img src="img/services/5.png" />
+                            <img src="img/services/writing-desk.svg" />
                             <div class="img-desc">Digital Marketing Audits</div>
                             <p>Know the best marketing practices which are suitable for your business function know where you stand</p>
                         </div>
@@ -204,7 +215,8 @@
         </div>
         <div class="service col-sm-3">
             <div class="service-header">
-                <h2 class="color-white">PLATFORMS</h2>
+                <img src="img/main/business-organization.svg" alt="Business Organisation" />
+                <h2>PLATFORMS</h2>
                 <div class="anim-border"></div>
             </div>
             <div class="service-details" style="background: white;">
@@ -212,7 +224,7 @@
                     <div class="sec-header col-md-12 sec-header text-center">
                         <a class="back-arrow"></a>
                         <h2>PLATFORMS</h2>
-                        <p class="caption">ZenSiva has got experience of operating campaigns in below mention platforms and delivering excellent results.</p>
+                        <p class="caption dark">ZenSiva has got experience of operating campaigns in below mention platforms and delivering excellent results.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -243,7 +255,9 @@
         </div>
         <div class="service col-sm-3">
             <div class="service-header">
-                <h2 class="color-white">GROWTH LABS</h2>
+                <!-- <object type="image/svg+xml" data="img/main/performance-chart.svg" class="svg-icon"></object> -->
+                <img src="img/main/performance-chart.svg" alt="Growth Labs" />
+                <h2>GROWTH LABS</h2>
                 <div class="anim-border"></div>
             </div>
             <div class="service-details growth-labs" style="background: white;">
@@ -251,21 +265,21 @@
                     <div class="sec-header col-md-12 sec-header text-center">
                         <a class="back-arrow"></a>
                         <h2>GROWTH LABS</h2>
-                        <p class="caption">Marketing tech is an ever disrupting space and ZenSiva focuses to evolve itself as days pass by. We here at ZS keep on learning and educating ourselves about the latest development happening in this space. Our partners will be given complimentary service of any one of the below labs services.</p>
+                        <p class="caption dark">Marketing tech is an ever disrupting space and ZenSiva focuses to evolve itself as days pass by. We here at ZS keep on learning and educating ourselves about the latest development happening in this space. Our partners will be given complimentary service of any one of the below labs services.</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-7">
                         <div class="growth col-md-offset-1 col-md-10 text-left">
-                            <img src="img/growth/1.png" />
+                            <img src="img/growth/customer-support.svg" />
                             <div class="img-desc">Customer Experience</div>
                         </div>
                         <div class="growth col-md-offset-1 col-md-10 text-left">
-                            <img src="img/growth/2.png" />
+                            <img src="img/growth/statistics.svg" />
                             <div class="img-desc">Growth Hacking</div>
                         </div>
                         <div class="growth col-md-offset-1 col-md-10 text-left">
-                            <img src="img/growth/3.png" />
+                            <img src="img/growth/settings-slider.svg" />
                             <div class="img-desc">SaaS Leverage</div>
                         </div>
                     </div>
@@ -287,7 +301,7 @@
             </div>
             <div class="row">
                 <div class="col-md-8">
-                    <h2 class="color-white">Give us a shout,<br>we'll make you a believer.</h2>
+                    <h2>Give us a shout,<br>we'll make you a believer.</h2>
                     <div class="col-md-6">
                         <ul class="lists">
                             <li><strong>New Business</strong></li>
