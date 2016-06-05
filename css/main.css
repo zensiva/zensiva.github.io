@@ -293,7 +293,7 @@ nav{
     -o-transition: width 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
     transition: width 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
     overflow-x: hidden;
-    border: 1px solid #0E97F0;
+    outline: 1px solid #0E97F0;
 }
 .service-header h2{
   font-size: 25px;
